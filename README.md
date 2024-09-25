@@ -1,26 +1,12 @@
+Introduce : TiSplit  A tool for splitting hundreds of GB CSV files into small files. If there are any bugs, please provide feedback in a timely manner, and the author will fix them in a timely manner! "
+   
+[tidb@host1 ~]$ ./tisplit.sh -i data.csv -o /home/tidb/csvpoc -m ceshi.tab -l 10
+option i ==> data.csv
+option o ==> /home/tidb/csvpoc
+option m ==> ceshi.tab
+option l ==> 10
 
-function TiSplit_help(){
-   echo "Auther    : cchouqiang"
-   echo "Introduce : TiSplit  A tool for splitting hundreds of GB CSV files into small files. If there are any bugs, please provide feedback in a timely manner, and the author will fix them in a timely manner! "
-   echo " "
-   echo "Usage: tisplit.sh [option] [parameter]"
-   echo "option: -i --input-file          [input_csv_path]          |               | CSV file to be processed;"
-   echo "        -o --operate-path        [operate_dir_path]        |               | Need to process the path of the CSV file"
-   echo "        -m --schema-meta         [schema_meta]             |               | eg: -m schema_name.table_name;"
-   echo "        -l --lines_per_file      [lines_per_file]          |(default: '')  | split lines"
-   echo "        -h --help                                          |               | help"
-}
-[tidb@host1 ~]$  ./tisplit.sh -i data.csv -o /home/tidb/csvpoc -m ceshi.tab -l 10
-Option i == data.csv
-Option o == /home/tidb/csvpoc
-Option m == ceshi.tab
-Option l == 10
----------------------------------------------------------------------------
-------------  TiSplit starting  ------------------------------------------
----------------------------------------------------------------------------
----------------------------------------------------------------------------
-------------  TiSplit completed !!!         ------------------------------
----------------------------------------------------------------------------
+
 [tidb@host1 ~]$ cd /home/tidb/csvpoc
 [tidb@host1 csvpoc]$ ls
 ceshi.tab.00000000.csv  ceshi.tab.00000007.csv  ceshi.tab.00000014.csv  ceshi.tab.00000021.csv  ceshi.tab.00000028.csv  ceshi.tab.00000035.csv  data.csv
