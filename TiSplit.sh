@@ -1,13 +1,13 @@
 function TiSplit_help(){
    echo "Auther    : cchouqiang"
-   echo "Introduce : TiSplit_for_lightning 是一个能让你快速将几百GB的csv文件切分成小文件的工具，如有任何 BUG 请及时反馈，作者将及时修复！"
+   echo "Introduce : TiSplit  A tool for splitting hundreds of GB CSV files into small files. If there are any bugs, please provide feedback in a timely manner, and the author will fix them in a timely manner! "
    echo " "
-   echo "Usage: ${0##*/} [option] [parameter]"
-   echo "option: -i --input-file          [input_csv_path]          |               | 需要处理的csv文件路径;"
-   echo "        -o --operate-path        [operate_dir_path]        |               | 需要处理csv文件的，空间足够的文件夹路径;"
-   echo "        -m --schema-meta         [schema_meta]             |               | 需要指定库中 csv 文件所属对象信息，eg: -m schema_name.table_name;"
-   echo "        -l --lines_per_file      [lines_per_file]          |(default: '')  | 指定拆分后的csv文件的行数"
-   echo "        -h --help                                          |               | 获取关于 TiSplit.sh 的操作指引"
+   echo "Usage: tisplit.sh [option] [parameter]"
+   echo "option: -i --input-file          [input_csv_path]          |               | CSV file to be processed;"
+   echo "        -o --operate-path        [operate_dir_path]        |               | Need to process the path of the CSV file"
+   echo "        -m --schema-meta         [schema_meta]             |               | eg: -m schema_name.table_name;"
+   echo "        -l --lines_per_file      [lines_per_file]          |(default: '')  | split lines"
+   echo "        -h --help                                          |               | help"
 }
 
 
